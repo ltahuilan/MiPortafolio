@@ -1,0 +1,79 @@
+/*-------------------------------*/
+/*------- CONTACTO -----*/
+/*-------------------------------*/
+.contacto {
+    height: 65rem;
+}
+
+.container__form {
+    max-width: 50rem;
+
+    .legend {
+        font-size: 2rem;
+        padding: 0 1rem;
+        color: $gris-medio;
+    }
+        
+    .fieldset {
+        border: 0.1rem solid $gris-claro;
+        padding: 3rem;
+        border-radius: 1rem;
+    }
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__grupo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    
+    label {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $gris-medio;
+    }
+
+    .input {
+    padding: 1rem;
+    border: 0.2rem solid $gris-claro;
+    border-radius: 0.7rem;
+    outline: 0;
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
+    }
+
+    .input:focus {
+        border: 0.2rem solid $azul;
+    }
+
+    .input.correcto {
+        border: 0.2rem solid $correcto;
+    }
+
+    .input.incorrecto {
+        border: 0.2rem solid $error;
+    }
+}
+
+.form__btn {
+    background-color: $azul;
+    color: $blanco;
+    outline: 0;
+    padding: 2rem;
+    border: none;
+    border-radius: 0.7rem;
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: $azul-h;
+    }
+}

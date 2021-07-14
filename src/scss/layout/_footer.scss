@@ -1,0 +1,67 @@
+
+/*-------------------------------*/
+/*------- FOOTER -----*/
+/*-------------------------------*/
+.footer {
+    background-color: #000;
+    color: #fff;
+}
+
+.footer__contenido {
+    @include tablet {
+        max-width: 80rem;
+    }
+}
+
+
+.footer__nav {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+
+    .footer__icons {
+        padding: 1rem;
+
+        @include tablet {
+            padding: 1rem 3rem;
+        }
+    }
+
+    .icon__container {
+        width: 5rem;
+        height: 5rem;
+        font-size: 4rem;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .footer__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 1rem;
+
+        @include tablet {
+            padding: 1rem 3rem;
+        }
+
+        a {
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: 400;
+        
+            &:hover {
+                color: #0083cf;
+            }
+        }
+    }
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    gap: 1rem;
+    padding: 3rem 0;
+}

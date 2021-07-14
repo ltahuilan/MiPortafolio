@@ -1,0 +1,17 @@
+/*-------------------------------*/
+/*------- PROYECTOS -----*/
+/*-------------------------------*/
+.proyectos {
+    height: 65rem;
+    margin-bottom: 3rem;
+    background-image: url("../img/1280_proyectos.webp");
+}
+
+.proyectos__textos {
+    height: inherit;
+    display: flex;
+}
+
+.proyectos__subtitulo {
+    margin: auto;
+}
