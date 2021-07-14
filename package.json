@@ -1,0 +1,32 @@
+{
+  "name": "02_portafolio",
+  "version": "1.0.0",
+  "description": "Portafolio Luis Tahuilán",
+  "main": "app.js",
+  "devDependencies": {
+    "autoprefixer": "^10.3.0",
+    "cssnano": "^5.0.6",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^1.12.1",
+    "gulp-webp": "^4.0.0",
+    "postcss": "^8.3.5",
+    "sass": "^1.35.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Portafolio",
+    "dev",
+    "fron",
+    "end",
+    "Luis",
+    "Tahuilán"
+  ],
+  "author": "Luis Tahuilán Mondragón",
+  "license": "ISC"
+}
