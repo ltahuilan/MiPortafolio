@@ -43,9 +43,14 @@
   }
 }
 
+.cards {
+    @include tablet {
+        @include grid(3, 3rem);
+    }
+}
+
 .tecno {
     @include tablet {
         height: 65rem;
-        @include grid (3, 3rem)
     }
 }

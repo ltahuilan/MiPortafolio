@@ -628,10 +628,15 @@ a {
 }
 
 @media (min-width: 768px) {
-  .tecno {
-    height: 65rem;
+  .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .tecno {
+    height: 65rem;
   }
 }
