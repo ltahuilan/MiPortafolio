@@ -1,6 +1,10 @@
 #ignorar carpeta node_modules
-./node_modules
+node_modules/
 
 #ignorar carpeta vscode
 
-./.vscode
+.vscode/
+
+#espacio de trabajo de VSCode
+
+portafolio.code-workspace
