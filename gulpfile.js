@@ -3,7 +3,7 @@ const {gulp, src, watch, dest, parallel} = require('gulp');
 const scss = require('gulp-sass')(require('sass'));
 const webp = require('gulp-webp');
 const notify = require('gulp-notify');
-// const concat = require('gulp-concat');
+const concat = require('gulp-concat');
 
 
 //utilidades css
@@ -39,15 +39,16 @@ function convertWebp() {
     .pipe(dest('./build/img'))
 }
 
-// function javascript () {
-//     return src(paths.js)
-//     .pipe(concat('bundle.js'))
-//     .pipe(notify({message: 'Luis: Compile JS files success...'}))
-//     .pipe(dest('./build/js'))
-// }
+function javascript () {
+    return src(paths.js)
+    .pipe(concat('bundle.js'))
+    .pipe(notify({message: 'Luis: Compile JS files success...'}))
+    .pipe(dest('./build/js'))
+}
 
 function watchFiles() {
     watch(paths.scss, css);
+    watch(paths.js, javascript)
 
 }
 
