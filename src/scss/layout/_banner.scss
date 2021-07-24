@@ -7,7 +7,7 @@
   }
   
 .container__nav {
-    top: 0;
+    // top: 0;
     padding: 1rem 3rem;
     display: flex;
     flex-direction: row;
@@ -24,44 +24,46 @@
         padding: 1rem 0;
     }
 
-    .container__nav--fijo {
+    &.container__nav--fijo {
         position: fixed;
         background-color: $bg-negro-5;
         width: 100%;
+        box-shadow: 0 1px 5px $negro;
+
+        &:hover {
+            background-color: $bg-negro-9;
+        }
     }
 
-    .container__nav--fijo:hover {
-        background-color: $bg-negro-9;
-    }
 }
   
 .menu__nav {
     position: absolute;
-    top: 0;
+    top: 6.82rem;
     left: 0;
     height: auto;
-    width: auto;
+    width: 100%;
     background-color: $bg-negro-9;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    transform: translateY(-130%);
+    transform: translateX(-100%);
     transition: transform 0.3s ease-in-out 0.1s;
 
     &.menu__nav--active {
-        transform: translateY(5rem);
+        transform: translateX(0%);
     }
 
     a {
         color: $blanco;
         font-size: 2rem;
-        padding: 1rem 0;
+        padding: 2rem 0;
         text-decoration: none;
         font-weight: 700;
         width: 100%;
         border-bottom: 0.1px solid transparent;
         
-        a:hover {
+        &:hover {
             color: $azul;
         }
     }
@@ -69,14 +71,14 @@
 }
 
   
-.nav__menu--icon {
+.menu__nav--icon {
     color: $blanco;
     font-size: 2.6rem;
     cursor: pointer;
     border-radius: 0.5rem;
     transition: all 0.3s;
     &:hover {
-        background: $bg-negro-9;
+        color: $azul;
     }
 }
 
@@ -112,6 +114,7 @@
     
     .menu__nav {
         position: relative;
+        top: 0;
         flex-wrap: nowrap;
         justify-content: space-between;
         background-color: transparent;
@@ -134,7 +137,7 @@
         color: $azul;
     }
     
-    .nav__menu--icon {
+    .menu__nav--icon {
         display: none;
     }
   }

@@ -6,8 +6,9 @@
   "devDependencies": {
     "autoprefixer": "^10.3.0",
     "cssnano": "^5.0.6",
-    "gulp": "^4.0.2",
-    "gulp-imagemin": "^3.4.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
     "gulp-notify": "^4.0.0",
     "gulp-postcss": "^9.0.0",
     "gulp-sass": "^5.0.0",

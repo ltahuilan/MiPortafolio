@@ -3,6 +3,7 @@ const {gulp, src, watch, dest, parallel} = require('gulp');
 const scss = require('gulp-sass')(require('sass'));
 const webp = require('gulp-webp');
 const notify = require('gulp-notify');
+// const concat = require('gulp-concat');
 
 
 //utilidades css
@@ -11,10 +12,12 @@ const postcss = require('gulp-postcss');
 const cssnano = require('cssnano');
 const sourcemap = require('gulp-sourcemaps');
 
+
 //paths
 const paths = {
     scss: 'src/scss/**/*.scss',
-    img: 'src/img/*'
+    img: 'src/img/*',
+    js: 'src/js/**/*.js'
 }
 
 //funciones
@@ -36,10 +39,17 @@ function convertWebp() {
     .pipe(dest('./build/img'))
 }
 
+// function javascript () {
+//     return src(paths.js)
+//     .pipe(concat('bundle.js'))
+//     .pipe(notify({message: 'Luis: Compile JS files success...'}))
+//     .pipe(dest('./build/js'))
+// }
+
 function watchFiles() {
     watch(paths.scss, css);
 
 }
 
 exports.css = css;
-exports.default = parallel( watchFiles, css, convertWebp );
+exports.default = parallel( watchFiles, css, convertWebp, javascript );
