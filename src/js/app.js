@@ -39,11 +39,10 @@ function menuEstatico () {
      const banner = document.querySelector('.banner__main');
      observer.observe(banner);
 
-}
+};
 
 function scrollNav () {
-    const links = document.querySelectorAll('.menu__nav a');
-
+    const links = document.querySelectorAll('#menu a');
     
     links.forEach(function (link) {
         
@@ -51,9 +50,9 @@ function scrollNav () {
 
             event.preventDefault();
             const seccion = document.querySelector(event.target.attributes.href.value);
-            seccion.scrollIntoview({
+            seccion.scrollIntoView({
                 behavior: 'smooth'
             });
-        })
-    })
+        });
+    });
 }
