@@ -13,6 +13,9 @@ const cssnano = require('cssnano');
 const sourcemap = require('gulp-sourcemaps');
 
 
+//utilidades js
+const terser = require('gulp-terser');
+
 //paths
 const paths = {
     scss: 'src/scss/**/*.scss',
@@ -24,9 +27,9 @@ const paths = {
 function css() {
     return src(paths.scss)
     // .pipe( sourcemap.init() )
-    // .pipe( notify({message: 'Luis: map of scss success'}) )
+    // .pipe( notify({message: 'Luis: map of scss <%= file.relative %> success'}) )
     .pipe( scss())
-    .pipe( notify({message: 'Luis: SCSS compile to CSS success...'}) )
+    // .pipe( notify({message: 'Luis: SCSS file <%= file.relative %> compile to CSS success...'}) )
     // .pipe( postcss([autoprefixer(), cssnano()]) )
     // .pipe( sourcemap.write('.') )
     .pipe( dest('./build/css') )
@@ -34,21 +37,24 @@ function css() {
 
 function convertWebp() {
     return src(paths.img)
-    .pipe(webp())
-    .pipe(notify({message: 'Luis: Image convert to webp success...'}))
-    .pipe(dest('./build/img'))
+    .pipe( webp() )
+    // .pipe( notify({message: 'Luis: Image <%= file.relative %> convert to webp success...'}) )
+    .pipe( dest('./build/img') )
 }
 
 function javascript () {
     return src(paths.js)
-    .pipe(concat('bundle.js'))
-    .pipe(notify({message: 'Luis: Compile JS files success...'}))
-    .pipe(dest('./build/js'))
+    .pipe( sourcemap.init())
+    .pipe( concat('bundle.js') )
+    // .pipe( notify({message: 'Luis: Compile JS file <%= file.relative %> success...'}) )
+    .pipe( terser() )
+    .pipe( sourcemap.write('.'))
+    .pipe( dest('./build/js'))
 }
 
 function watchFiles() {
-    watch(paths.scss, css);
-    watch(paths.js, javascript)
+    watch( paths.scss, css );
+    watch( paths.js, javascript )
 
 }
 

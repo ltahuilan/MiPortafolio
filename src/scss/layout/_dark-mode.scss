@@ -1,0 +1,25 @@
+body {
+    &.dark-mode-active {
+        background: darken($gris-oscuro, 10);
+
+        p {
+            color: $blanco;
+        }
+
+        .border-b {
+            
+        }
+
+        .card__titulo {
+            color: lighten($gris-claro, 20);
+        }
+
+        .about {
+            background:$gris-oscuro;
+        }
+
+        .card {
+            background:$gris-oscuro;
+        }
+    }
+}

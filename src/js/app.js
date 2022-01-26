@@ -3,23 +3,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
     menuMobil ();
     menuEstatico ();
-    scrollNav ();
-    
+    scrollNav ();    
+    darkMode();
 });
 
 
+const menu = document.querySelector('.menu__nav');
+const nav = document.querySelector('.container__nav');
+
 function menuMobil () {
-    const menu = document.querySelector('.menu__nav');
     const icono = document.querySelector('.fas');
     icono.addEventListener('click', function () {
         menu.classList.toggle('menu__nav--active');
         icono.classList.toggle('fa-times');
+        nav.classList.toggle('sin-bx-shw');
+
     })
 }
 
 function menuEstatico () {
-
-   const nav = document.querySelector('.container__nav');
 
     //Registrar el intersection oberver
     const observer = new IntersectionObserver( function (entries) {
@@ -38,14 +40,13 @@ function menuEstatico () {
      //elemento a observar
      const banner = document.querySelector('.banner__main');
      observer.observe(banner);
-
 };
 
 function scrollNav () {
     const links = document.querySelectorAll('#menu a');
     
     links.forEach(function (link) {
-        
+         
         link.addEventListener('click', function (event) {
 
             event.preventDefault();
@@ -54,5 +55,12 @@ function scrollNav () {
                 behavior: 'smooth'
             });
         });
+    });
+}
+
+function darkMode () {
+    botonDarkMode = document.querySelector('.dark-mode');
+    botonDarkMode.addEventListener('click', function () {
+        document.body.classList.toggle('dark-mode-active');  
     });
 }
