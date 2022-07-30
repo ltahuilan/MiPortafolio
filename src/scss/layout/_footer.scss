@@ -1,14 +1,13 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
 
-/*-------------------------------*/
-/*------- FOOTER -----*/
-/*-------------------------------*/
 .footer {
     background-color: #000;
     color: #fff;
 }
 
 .footer__contenido {
-    @include tablet {
+    @include m.tablet {
         max-width: 80rem;
     }
 }
@@ -22,7 +21,7 @@
     .footer__icons {
         padding: 1rem;
 
-        @include tablet {
+        @include m.tablet {
             padding: 1rem 3rem;
         }
     }
@@ -41,7 +40,7 @@
         justify-content: space-evenly;
         padding: 1rem;
 
-        @include tablet {
+        @include m.tablet {
             padding: 1rem 3rem;
         }
 

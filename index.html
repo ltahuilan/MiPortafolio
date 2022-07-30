@@ -7,38 +7,38 @@
     <title>Portafolio Luis Tahuil&aacute;n</title>
     <!--FONT AWESOME-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./build/css/app.css">
 </head>
 <body>
 
-    <header class="banner bg-img">
-        
+    <header class="banner bg-img">        
         <div class="bg">
-            <nav class="banner__nav">
-                <div class="container__nav">
-                    <div class="menu__nav--icon">
-                        <i class="fas fa-bars"></i>
-                    </div>
-    
-                    <div class="menu__nav" id="menu">
-                        <a href="#about" class="menu__link">Sobre Mi</a>
-                        <a href="#tecno" class="menu__link">Tecnolog&iacute;as</a>
-                        <a href="#proyectos" class="menu__link">Proyectos</a>
-                        <a href="#contacto" class="menu__link">Cont&aacute;ctame</a>
-                    </div>
+            <nav class="container__nav">
+                <div class="menu__nav--icon">
+                    <i class="fas fa-bars"></i>
+                </div>
 
-                    <div class="dark-mode">
-                        <i class="far fa-moon"></i>
-                    </div>
-                                    
-                </div><!--.container__nav-->         
-            </nav><!--.banner__nav-->
+                <div class="menu__nav" id="menu">
+                    <a href="#about" class="menu__link">Sobre Mi</a>
+                    <a href="#proyectos" class="menu__link">Proyectos</a>
+                    <a href="#tecnologia" class="menu__link">Tecnolog&iacute;as</a>
+                    <a href="#contacto" class="menu__link">Cont&aacute;ctame</a>
+                </div>
+
+                <div class="dark-mode">
+                    <i class="far fa-moon"></i>
+                </div>
+                                
+            </nav><!--.container__nav-->         
     
             <section class="banner__main">
                 <div class="container banner__textos">
-                    <h1 class="titulo titulo--mod">Front-End <span class="active">Developer Jr.</span></h1>
-                    <h2 class="subtitulo subtitulo--mod">Luis Tahuil&aacute;n</h2>
+                    <h1 class="titulo titulo--mod">Luis Tahuil&aacute;n</h1>
+                    <h2 class="subtitulo subtitulo--mod">Autodidacta en <span class="active">Desarrollo Web</span></h2>
                 </div>
             </section>            
         </div>
@@ -47,72 +47,146 @@
     <main>
         <section class="about" id="about">
             <div class="container about__container">
-                <img src="./build/img/Yo.webp" alt="yo_img" class="about__img">
+                <img src="src/img/Yo.jpg" alt="img-yo" class="about__img">
                 <div class="about__content">
-                    <h2 class="subtitulo">Acerca de mi...</h2>
-                    <p class="parrafo"></p>
-                </div>
-            </div>
-        </section>
-
-        <section class="tecno" id="tecno">
-            <div class="container">
-                <h2 class="subtitulo">Tecnolog&iacute;as</h2>
-                <div class="cards">
-                    <div class="card">
-                        <i class="card__icon fab fa-html5"></i>
-                        <h3 class="card__titulo">HTML5</h3>
-                    </div>
-
-                    <div class="card">
-                        <i class="card__icon fab fa-css3-alt"></i>
-                        <h3 class="card__titulo">CSS3</h3>
-                    </div>
-
-                    <div class="card">
-                        <i class="card__icon fab fa-js"></i>
-                        <h3 class="card__titulo">JAVASCRIPT</h3>
-                    </div>
-                </div>
-            </div>
-        </section><!--.tecno-->
-
-        <section class="section3">
-            <h2 class="subtitulo">[Secci&oacute;n 3]</h2>
-            <div class="container seccion3__contenido">
-                <div class="card">
-                    <img src="./build/img/1080_card-img-1.webp" alt="img" class="card__img" >
-                    <div class="card__textos">
-                        <h3 class="card__titulo">Ideas Creativas</h3>
-                        <p class="parrafo card__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, autem?</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./build/img/1080_card-img-2.webp" alt="img" class="card__img" >
-                    <div class="card__textos">
-                        <h3 class="card__titulo">Desarrollo Colaborativo</h3>
-                        <p class="parrafo card__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, autem?</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./build/img/1080_card-img-3.webp" alt="img" class="card__img" >
-                    <div class="card__textos">
-                        <h3 class="card__titulo">Tecnolog&iacute;a adaptable a dispositivos moviles</h3>
-                        <p class="parrafo card__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, autem?</p>
-                    </div>
+                    <p class="parrafo">Hola, soy Luis Tahuilán. <span>Me apasiona la programación</span></p>
+                    <p class="parrafo">Autodidacta 100% en desarrollo web</p>
+                    <p class="parrafo">Mi objetivo es colaborar en proyectos y crecer profesionalmente.</p>
                 </div>
             </div>
         </section>
 
         <section class="proyectos bg-img" id="proyectos">
-            <div class="bg">
-                <div class="proyectos__textos">
-                    <h2 class="subtitulo subtitulo--mod proyectos__subtitulo">Proyectos</h2>
+            <h2 class="subtitulo">Proyectos</h2>
+            <div class="proyectos__contenedor container" id="proyectos">
+                <div class="card scroll scroll-pro">
+                    <div class="contenedor__img">
+                        <img src="./build/img/proyectos/app-salon.webp" alt="img app-salon" class="card__img">
+                        <div class="capa">
+                            <a href="#proyectos">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>App Salon</h3>
+                        <p>Sitio de citas y servicios de salon de belleza, con sistema de login y rol de usuario administrador. Tecnologías: PHP MVC, MySQL, JavaScript, Gulp, Sass.</p>
+                    </div>
+                </div>
+                <div class="card scroll scroll-pro">
+                    <div class="contenedor__img">
+                        <img src="./build/img/proyectos/uptask_dashboard.webp" alt="img uptask" class="card__img">
+                        <div class="capa">
+                            <a href="#proyectos">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>UpTask</h3>
+                        <p>Aplicación para administración de tareas con sistema de login. Crear, editar, eliminar tareas. Implementación de virtual DOM. Tecnologías: PHP MVC, MySQL, JavaScript, Gulp, Sass.</p>
+                    </div>
+                </div>
+                <div class="card scroll scroll-pro">
+                    <div class="contenedor__img">
+                        <img src="./build/img/proyectos/bienes_raices.webp" alt="img bienes raices" class="card__img">
+                        <div class="capa">
+                            <a href="#proyectos">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Bienes Raices</h3>
+                        <p>Sitio Web para promoción y venta de propiedades. Sistema de login y rol de usuario admin. Los anuncios se muestran desde una BD con fetch API. Es posible crear, editar y eliminar propiedades. Tecnologías: PHP MVC, MySQL, JavaScript, Gulp, Sass.</p>
+                    </div>
+                </div>
+                <div class="card scroll scroll-pro">
+                    <div class="contenedor__img">
+                        <img src="./build/img/1080_card-img-1.webp" alt="img" class="card__img">
+                        <div class="capa">
+                            <a href="#proyectos">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Proyecto 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nemo cupiditate temporibus pariatur tempore tempora?</p>
+                    </div>
+                </div>
+                <div class="card scroll scroll-pro">
+                    <div class="contenedor__img">
+                        <img src="./build/img/1080_card-img-1.webp" alt="img" class="card__img">
+                        <div class="capa">
+                            <a href="#proyectos">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Proyecto 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nemo cupiditate temporibus pariatur tempore tempora?</p>
+                    </div>
+                </div>
+                <div class="card scroll scroll-pro">
+                    <div class="contenedor__img">
+                        <img src="./build/img/1080_card-img-1.webp" alt="img" class="card__img">
+                        <div class="capa">
+                            <a href="#proyectos">Ver Proyecto</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Proyecto 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nemo cupiditate temporibus pariatur tempore tempora?</p>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <section class="tecnologia" id="tecnologia">
+            <h2 class="subtitulo">Tecnolog&iacute;as</h2>
+            <div class="container">
+                <div class="cards" id="tecnologias">
+                    <div class="card card-scroll-tec">
+                        <i class="card__icon fab fa-html5"></i>
+                        <h3 class="card__titulo">HTML5</h3>
+                    </div>
+
+                    <div class="card card-scroll-tec">
+                        <i class="card__icon fab fa-css3-alt"></i>
+                        <h3 class="card__titulo">CSS3</h3>
+                    </div>
+
+                    <div class="card card-scroll-tec">
+                        <i class="card__icon fab fa-js"></i>
+                        <h3 class="card__titulo">JAVASCRIPT</h3>
+                    </div>
+                    
+                    <div class="card card-scroll-tec">
+                        <i class="card__icon fab fa-php"></i>
+                        <h3 class="card__titulo">PHP</h3>
+                    </div>
+
+                    <div class="card card-scroll-tec">
+                        <i class="card__icon fab fa-bootstrap"></i>
+                        <h3 class="card__titulo">Bootstrap</h3>
+                    </div>
+
+                    <div class="card card-scroll-tec">
+                        <i class="card__icon fab fa-git-alt"></i>
+                        <h3 class="card__titulo">Git</h3>
+                    </div>
+
+                    <div class="card card-scroll-tec">
+                        <i class="card__icon fab fa-github-square"></i>
+                        <h3 class="card__titulo">GitHub</h3>
+                    </div>
+
+                    <div class="card card-scroll-tec">
+                        <i class="card__icon fab fa-sass"></i>
+                        <h3 class="card__titulo">SASS</h3>
+                    </div>
+                    
+                    <div class="card card-scroll-tec">
+                        <i class="card__icon fab fa-gulp"></i>
+                        <h3 class="card__titulo">GULP</h3>
+                    </div>
+
+                </div>
+            </div>
+        </section><!--.tecno-->
+
 
         <section class="contacto" id="contacto">
             <div class="container container__form">
@@ -137,7 +211,6 @@
     
                         <button type="submit" id="submit" class="form__btn">Enviar</button>                    
                     </form>
-
                 </fieldset>
                 
             </div>

@@ -1,17 +1,82 @@
-/*-------------------------------*/
-/*------- PROYECTOS -----*/
-/*-------------------------------*/
-.proyectos {
-    height: 65rem;
-    margin-bottom: 3rem;
-    // background-image: url("../img/1280_proyectos.webp");
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.proyectos__contenedor {
+    @include m.tablet {
+        @include m.grid(3, 2rem);
+    }
+
+    .card { 
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+        background-color: v.$beige;
+        box-shadow: 0px 5px 12px -5px v.$gris-medio;
+
+        h3 {
+            margin: 2rem 0 0 0;
+            color: v.$gris-oscuro;
+        }
+
+        p {
+            font-size: 1.8rem;
+            font-weight: v.$regular;
+            text-align: center;
+            padding: 1rem;
+        }
+    }
+
+    .contenedor__img {            
+        position: relative;
+        overflow: hidden;
+        
+        .card__img {
+            width: 100%;
+            height: 100%;
+            transition-property: all;
+            transition-duration: .3s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .capa {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            // visibility: hidden;
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            transition-property: all;
+            transition-duration: .5s;
+            transition-timing-function: ease-in-out;
+
+            a {
+                color: v.$blanco;
+                font-size: 2.2rem;
+                font-weight: v.$regular;
+                &:hover {
+                    color: v.$naranja;
+                }
+            }
+        }
+
+        &:hover {  
+            .capa {
+                // visibility: visible;
+                opacity: 1;
+                cursor: pointer;
+            }
+            .card__img {
+                transform: scale(1.2);
+            }             
+        }
+    }
 }
 
-.proyectos__textos {
-    height: inherit;
-    display: flex;
-}
-
-.proyectos__subtitulo {
-    margin: auto;
-}

@@ -1,25 +1,43 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
 body {
     &.dark-mode-active {
-        background: darken($gris-oscuro, 10);
+        background: darken(v.$gris-oscuro, 10);
 
-        p {
-            color: $blanco;
+        p, h3 {
+            color: v.$blanco;
         }
 
-        .border-b {
-            
+        .titulo {
+            .active {
+                color: lighten(v.$azul, 25%);
+            }
+        }
+
+        .subtitulo {
+            color: lighten(v.$azul, 25%);
+
+            &.subtitulo--mod {
+                color: v.$blanco;
+            }
         }
 
         .card__titulo {
-            color: lighten($gris-claro, 20);
+            color: lighten(v.$gris-claro, 20);
         }
 
         .about {
-            background:$gris-oscuro;
+            background: v.$gris-oscuro;
         }
 
         .card {
-            background:$gris-oscuro;
+            background: v.$gris-oscuro;
+            box-shadow: 0px 5px 12px -5px v.$negro;
+
+            h3 {
+                color: v.$rosa;
+            }
         }
     }
 }

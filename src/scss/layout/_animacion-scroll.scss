@@ -1,0 +1,23 @@
+.scroll {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: .9s;
+    transition-timing-function: ease-in-out;
+
+    &.visible {
+        opacity: 1;
+    }
+
+    &.animacion {
+        animation: desplazar 2s;
+    }
+}
+
+@keyframes desplazar {
+    0% {
+        transform: scale(.1);
+    }
+    100% {
+        transform: (1);
+    }
+}

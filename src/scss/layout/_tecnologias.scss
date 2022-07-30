@@ -1,55 +1,84 @@
-/*-------------------------------*/
-/*------- SECTION TECNO -----*/
-/*-------------------------------*/
-.cards {
-  @include grid(2, 3rem);
-}
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
 
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  background-color: $beige;
-  border-radius: 0.7rem;
-  padding: 2rem;
+.tecnologia {
+    transition-property: opacity;
+    transition-duration: .9s;
+    transition-timing-function: ease-in-out;
 
-  .card__icon {
-    font-size: 7rem;
-    top: 0;
-  }
-
-  .fa-html5 {
-    color: $html;
-  }
-
-  .fa-css3-alt {
-    color: $css;
-  }
-
-  .fa-js {
-    color: $javascript;
-  }
-
-  .card__titulo {
-    font-size: 2.4rem;
-    text-transform: uppercase;
-    margin-bottom: 3rem;
-  }
-
-  .card__parrafo {
-    text-align: center;
-  }
 }
 
 .cards {
-    @include tablet {
-        @include grid(3, 3rem);
+    @include m.grid(2, 1rem);
+    
+    @include m.tablet {
+        @include m.grid(4, 3rem);
+    }
+    
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      background-color: v.$beige;
+      border-radius: 0.7rem;
+      padding: 2rem;
+      width: auto;
+      box-shadow: 0px 5px 12px -5px v.$gris-medio;
+    
+      .card__icon {
+        font-size: 7rem;
+        top: 0;
+      }
+    
+      .fa-html5 {
+        color: v.$html;
+      }
+    
+      .fa-css3-alt {
+        color: v.$css;
+      }
+    
+      .fa-js {
+        color: v.$javascript;
+      }
+    
+      .fa-sass {
+          color: v.$sass;
+      }
+    
+      .fa-gulp {
+          color: v.$gulp;
+      }
+    
+      .fa-php {
+          color:v.$php;
+      }
+    
+      .fa-git-alt {
+          color: v.$git;
+      }
+    
+      .fa-github-square {
+          color: v.$github;
+      }
+    
+      .fa-bootstrap {
+          color: v.$bootstrap;
+      }
+    
+      .card__titulo {
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+      }
+    
+      .card__parrafo {
+        text-align: center;
+      }
     }
 }
 
-.tecno {
-    @include tablet {
-        height: 65rem;
-    }
-}
+
+
+

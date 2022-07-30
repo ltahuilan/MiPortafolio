@@ -1,6 +1,6 @@
-/*-------------------------------*/
-/*------- CONTACTO -----*/
-/*-------------------------------*/
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
 .contacto {
     height: 65rem;
 }
@@ -11,11 +11,11 @@
     .legend {
         font-size: 2rem;
         padding: 0 1rem;
-        color: $gris-medio;
+        color: v.$gris-medio;
     }
         
     .fieldset {
-        border: 0.1rem solid $gris-claro;
+        border: 0.1rem solid v.$gris-claro;
         padding: 3rem;
         border-radius: 1rem;
     }
@@ -37,34 +37,33 @@
     label {
     font-size: 2rem;
     font-weight: 700;
-    color: $gris-medio;
+    color: v.$gris-medio;
     }
 
     .input {
     padding: 1rem;
-    border: 0.2rem solid $gris-claro;
+    border: 0.2rem solid transparent;
     border-radius: 0.7rem;
     outline: 0;
     font-size: 2rem;
-    font-family: "Lato", sans-serif;
     }
 
     .input:focus {
-        border: 0.2rem solid $azul;
+        border: 0.2rem solid v.$azul;
     }
 
     .input.correcto {
-        border: 0.2rem solid $correcto;
+        border: 0.2rem solid v.$correcto;
     }
 
     .input.incorrecto {
-        border: 0.2rem solid $error;
+        border: 0.2rem solid v.$error;
     }
 }
 
 .form__btn {
-    background-color: $azul;
-    color: $blanco;
+    background-color: v.$azul;
+    color: v.$blanco;
     outline: 0;
     padding: 2rem;
     border: none;
@@ -74,6 +73,6 @@
     cursor: pointer;
     
     &:hover {
-        background-color: $azul-h;
+        background-color: v.$azul;
     }
 }

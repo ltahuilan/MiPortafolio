@@ -19,7 +19,7 @@ const terser = require('gulp-terser');
 //paths
 const paths = {
     scss: 'src/scss/**/*.scss',
-    img: 'src/img/*',
+    img: 'src/img/**/*',
     js: 'src/js/**/*.js'
 }
 
@@ -38,7 +38,7 @@ function css() {
 function convertWebp() {
     return src(paths.img)
     .pipe( webp() )
-    // .pipe( notify({message: 'Luis: Image <%= file.relative %> convert to webp success...'}) )
+    .pipe( notify({message: 'Luis: Image <%= file.relative %> convert to webp success...'}) )
     .pipe( dest('./build/img') )
 }
 

@@ -1,16 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+//fonts
+$thin: 100;
+$light: 300;
+$regular: 400;
+$bold: 700;
 
 //colores
 $negro: #000;
 $blanco: #fff;
 $beige: #f2f2f2;
 $azul: #0083cf;
-$azul-h: #0074b8;
 $gris-oscuro: #383838;
 $gris-medio: #6d6d6d;
 $gris-claro: #a7a7a7;
 $correcto: #1cf31c;
 $error: #dc143c;
 
+$cyan: #0891B2;
+$indigo: #4338CA;
+$morado: #7C3AED;
+$naranja:#F59E0B;
+$rosa: #DB2777;
+
+$bg-negro-3: rgba(15, 15, 15, 0.3);
 $bg-negro-5: rgba(15, 15, 15, 0.5);
 $bg-negro-9: rgba(15, 15, 15, 0.9);
 
@@ -18,8 +31,14 @@ $bg-negro-9: rgba(15, 15, 15, 0.9);
 $html: #DD4B25;
 $css: #056AB0;
 $javascript: #EFD81D;
+$git: #E94E31;
+$bootstrap: #6E0FEA;
+$github: #632885;
+$sass: #CE6B9E;
+$gulp: #E44849;
+$php: #6C80C9;
 
 //tamaños
-$telefono: 480px;
+$telefono: 400px;
 $tablet: 768px;
 $desktop: 1200px
