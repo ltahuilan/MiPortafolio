@@ -30,15 +30,15 @@ function css() {
     // .pipe( notify({message: 'Luis: map of scss <%= file.relative %> success'}) )
     .pipe( scss())
     // .pipe( notify({message: 'Luis: SCSS file <%= file.relative %> compile to CSS success...'}) )
-    // .pipe( postcss([autoprefixer(), cssnano()]) )
-    // .pipe( sourcemap.write('.') )
+    .pipe( postcss([autoprefixer(), cssnano()]) )
+    .pipe( sourcemap.write('.') )
     .pipe( dest('./build/css') )
 }
 
 function convertWebp() {
     return src(paths.img)
     .pipe( webp() )
-    .pipe( notify({message: 'Luis: Image <%= file.relative %> convert to webp success...'}) )
+    //.pipe( notify({message: 'Luis: Image <%= file.relative %> convert to webp success...'}) )
     .pipe( dest('./build/img') )
 }
 
@@ -55,7 +55,6 @@ function javascript () {
 function watchFiles() {
     watch( paths.scss, css );
     watch( paths.js, javascript )
-
 }
 
 exports.css = css;

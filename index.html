@@ -193,20 +193,41 @@
                 <h2 class="subtitulo">Cont&aacute;ctame</h2> 
                 <fieldset class="fieldset">
                     <legend class="legend">Dejame tu mensaje</legend>
-                    <form action="" class="form">
+                    <form action="https://formsubmit.co/fe5024e987296bc73d14cf88acc8c034" method="POST" class="form">
                         <div class="form__grupo">
                             <label class="label__tunombre" for="tunombre">Tu nombre</label>
-                            <input class="input input__tunombre" type="text" required id="tunombre" placeholder="Tu nombre">
+                            <input
+                                type="text"
+                                name="name"
+                                class="input input__tunombre"
+                                id="tunombre"
+                                placeholder="Tu nombre"
+                                required
+                                />
                         </div>
     
                         <div class="form__grupo">
                             <label class="label__tucorreo" for="tucorreo">Tu correo</label>
-                            <input class="input input__tucorreo" type="email" required id="tucorreo" placeholder="Tu correo">
+                            <input
+                                type="email"
+                                name="email"
+                                class="input input__tucorreo"
+                                id="tucorreo"
+                                placeholder="Tu correo"
+                                required
+                                />
                         </div>
     
                         <div class="form__grupo">
                             <label class="label__tumensaje" for="tumensaje">Tu mensaje</label>
-                            <textarea class="input text__tumensaje" required id="tumensaje" placeholder="Escribe tu mensaje"></textarea>
+                            <textarea
+                                name="mensaje"
+                                class="input text__tumensaje"
+                                id="tumensaje"
+                                placeholder="Escribe tu mensaje"
+                                required
+                            >
+                            </textarea>
                         </div>
     
                         <button type="submit" id="submit" class="form__btn">Enviar</button>                    
