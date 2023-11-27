@@ -73,6 +73,6 @@
     cursor: pointer;
     
     &:hover {
-        background-color: v.$azul;
+        background-color: darken(v.$azul, 10);
     }
 }

@@ -32,6 +32,18 @@
         font-size: 4rem;
         text-align: center;
         margin: 1rem 0;
+
+        .icon-github {
+            color: v.$github;
+        }
+
+        .icon-linkedin {
+            color: v.$linkedin;
+        }
+
+        .icon-whatsapp {
+            color: v.$whatsapp;
+        }
     }
 
     .footer__menu {
